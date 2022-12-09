@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-content>
+    <ng-container *ngIf="data$ | async as item">
+      <h1>Let's find you something to do</h1>
+
+      <p>Your todays activity is: {{item.activity}} </p>
+      <p>..and you will need {{item.participants}} friends</p>
+      <p>..and activity type is {{item.type}}. Have fun!</p></ng-container>
+
+
+  </mat-card-content>
+</mat-card>
